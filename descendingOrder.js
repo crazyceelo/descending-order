@@ -6,7 +6,13 @@ function descendingOrder(n) {
     arr.push(+num.charAt(i));
   }
 
-  console.log(arr);
+  arr.sort();
+  arr.reverse();
+  let descendingString = arr.join("");
+  let finalNumber = parseInt(descendingString);
+
+
+  console.log(finalNumber);
 }
 
 descendingOrder(43234);
